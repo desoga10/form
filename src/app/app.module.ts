@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FormsComponent } from './forms/forms.component';
 
+import { HighlightModule } from 'ngx-highlightjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FormsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HighlightModule.forRoot({ theme: 'arduino-light'})
   ],
   providers: [],
   bootstrap: [AppComponent]

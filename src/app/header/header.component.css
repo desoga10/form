@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    padding: 10px 25px;
+    color: #fefefe;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+ul li::after {   
+    content: '';
+    display: block; 
+    border-bottom: 2px solid #fefefe;    
+    margin-top: 5px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+ul li:hover::after { 
+    transform: scaleX(1);
+}
