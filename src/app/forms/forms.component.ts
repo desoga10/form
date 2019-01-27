@@ -7,21 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormsComponent implements OnInit {
 
-  codesample = {
-    'branch' : 'New Branch',
-    'key' : 'any one',
-    'names' : ['Azhar', 'Husain']
-  };
-
-  someCode: String = '';
-
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
 
-    console.log(this.codesample , JSON.stringify(this.codesample));
-    this.someCode = JSON.stringify(this.codesample);
-  }
 
 }
